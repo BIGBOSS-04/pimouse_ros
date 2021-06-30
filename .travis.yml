@@ -1,0 +1,9 @@
+language: python2
+cache: pip
+sudo: required
+dist: trusty
+install:
+ - pip install catkin_pkg
+
+script:
+  - bash -xve ./test/travis_ros_install.bash
